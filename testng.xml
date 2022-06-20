@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="none">
+    <listeners>
+        <listener class-name="base.Listeners"/>
+    </listeners>
+    <test verbose="2" name="Dream11POC">
+        <classes>
+            <class name="tests.Dream11POC">
+                <methods>
+                    <include name="verifyNotificationIconTest"/>
+                    <include name="verifySwitchBetweenSportsTest"/>
+                    <include name="verifyTapOnSportsTest"/>
+                    <include name="verifyUpcomingSectionAndMyMatchesTest"/>
+                    <include name="verifyContentOfTheMatchCardTest"/>
+                    <include name="verifyProfileTestTest"/>
+                    <include name="VerifySetReminderOnMatchCardTest"/>
+                    <include name="verifyBottomNavigationTest"/>
+                    <include name="verifyDraggablePositionOfStreaksIconTest"/>
+                    <include name="verifyGamificationIconOrStreaksTest"/>
+                    <include name="verifyWalletIconScriptTest"/>
+                    <include name="verifyCheckNetworkStripTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
